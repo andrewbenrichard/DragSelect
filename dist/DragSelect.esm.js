@@ -439,6 +439,7 @@ const setStylePosition = (element, values, useTranslate) => {
         if (!element || !element.setAttribute)
             return;
         element.setAttribute('drag-select-cor', `${values.x}, ${values.y}`);
+        return element;
     }
     if (useTranslate) {
         const prevTransform = element.style.transform;
